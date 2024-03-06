@@ -1,0 +1,35 @@
+.input-container,
+.select-input-container,
+.custom-button,
+.search-bar-container {
+  margin-bottom: 15px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container label {
+  margin-right: 10px;
+}
+
+.select-input-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.custom-button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

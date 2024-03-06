@@ -1,6 +1,8 @@
 # Holberton School Cinema Guru API
 This is a simple movies API dedicated for Holberton School React Project Holberton School Cinema Guru
 
+# use kill -9 $(lsof -t -i:8000) after each run
+
 ## Response Codes 
 ### Response Codes
 ```
