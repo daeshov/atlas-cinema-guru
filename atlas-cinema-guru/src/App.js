@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
+import Authentication from './routes/auth/Authentication';
+import Dashboard from './routes/dashboard/Dashboard';
+
 
 // Placeholder components - replace these with your actual components later
-const Dashboard = ({ username }) => <div>Dashboard - Welcome, {username}!</div>;
-const Authentication = () => <div>Authentication - User is not logged in</div>;
 
 function App() {
-  // State
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userUsername, setUserUsername] = useState('');
 
@@ -35,8 +35,6 @@ function App() {
         .catch(error => {
           // Handle errors or set state accordingly
           console.error('Error during authentication:', error);
-          setIsLoggedIn(false);
-          setUserUsername('');
         });
     }
   }, []); 
@@ -44,9 +42,12 @@ function App() {
   return (
     <div className="App">
       {isLoggedIn ? (
-        <Dashboard username={userUsername} />
+        <Dashboard username={userUsername}
+        setIsLoggedIn={setIsLoggedIn} />
       ) : (
-        <Authentication />
+        <Authentication
+        setIsLoggedIn={setIsLoggedIn}
+        setUserUsername={setUserUsername} />
       )}
     </div>
   );

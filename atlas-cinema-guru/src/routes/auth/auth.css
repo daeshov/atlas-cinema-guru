@@ -1,0 +1,59 @@
+@import '../../App.css';
+
+.light-red {
+  background-color: var(--color-light-red) !important;
+}
+
+.dark-red {
+  background-color: var(--color-dark-red) !important;
+}
+
+.form{
+  width: 50%;
+  max-width: 450px;
+}
+
+/* #region LOGIN */
+
+.login-input, .register-input {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.signin-bttn, .signup-bttn {
+  align-self: flex-end;
+}
+
+.login-container h2, .register-container h2 {
+  font-size: 19px;
+  align-self: center;
+  color: var(--color-black-text);
+  color: #1C1C1C;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+/* #endregion */
+
+/* #region AUTH BUTTONS */
+
+.auth-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.auth-buttons Button {
+  margin: 0;
+  padding: 3% 10% 3% 10%;
+  width: 50%;
+  font-weight: 800;
+  background-color: var(--color-white);
+}
+
+/* #endregion */
